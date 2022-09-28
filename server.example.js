@@ -45,9 +45,8 @@ const getSingleElementOf = (uuid) => {
 
 const addElement = (element) => {
 	const data = getAllMockData();
-
 	data.push(element);
-	console.log(data);
+
 	updateAllElementsWith(data);
 
 	return getAllMockData();
@@ -68,6 +67,8 @@ const updateSingleElementWith = (newData) => {
 
 	return getSingleElementOf(elementId);
 };
+
+// ROUTES list, post, put, get
 
 fastify.get(ROUTES.list, async (_, reply) => {
 	reply.header('Access-Control-Allow-Origin', 'http://localhost:8080');
@@ -119,6 +120,8 @@ fastify.get(ROUTES.get, async (request, reply) => {
 		data,
 	});
 });
+
+// RUN the server
 
 fastify.listen({ port: 3000 }, (err, address) => {
 	if (err) throw err;
