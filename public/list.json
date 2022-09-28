@@ -42,11 +42,21 @@
     {
         "service_area": "Lincoln Park kkkk",
         "allow_edits": true,
+        "grace_period": 10123,
+        "disable_edit_current_time": 2,
+        "disable_edit_trip_start": 34123,
+        "late_fee_amount": 12,
+        "late_fee_hours": 12,
+        "uuid": "1be60d6f-ba62-4409-842f-d0c3e4e50950"
+    },
+    {
+        "service_area": "Lincoln ASASS",
+        "allow_edits": true,
         "grace_period": 10,
         "disable_edit_current_time": 2,
         "disable_edit_trip_start": 34,
         "late_fee_amount": 12,
         "late_fee_hours": 12,
-        "uuid": "1be60d6f-ba62-4409-842f-d0c3e4e50950"
+        "uuid": "aac464de-cd38-4368-bcc4-f6cf715f8105"
     }
 ]

@@ -8,6 +8,15 @@ const crypto = require('crypto');
 
 const JSON_PATH = './public/list.json';
 
+const ROUTES = {
+	list: '/api/v1/list/',
+	get: '/api/v1/get/:id',
+	update: '/api/v1/update/:id',
+	create: '/api/v1/create/',
+};
+
+const ORIGIN = 'http://localhost:3000'; // your FE app here
+
 fastify.register(cors, {});
 
 fastify.register(require('@fastify/static'), {
@@ -60,7 +69,7 @@ const updateSingleElementWith = (newData) => {
 	return getSingleElementOf(elementId);
 };
 
-fastify.get('/api/v1/list/', async (_, reply) => {
+fastify.get(ROUTES.list, async (_, reply) => {
 	reply.header('Access-Control-Allow-Origin', 'http://localhost:8080');
 	reply.header('Access-Control-Allow-Credentials', true);
 	reply.header('Access-Control-Allow-Methods', 'GET');
@@ -72,14 +81,7 @@ fastify.get('/api/v1/list/', async (_, reply) => {
 	});
 });
 
-fastify.options('/api/v1/create/', (_, reply) => {
-	reply.header('Access-Control-Allow-Origin', 'http://localhost:8080');
-	reply.header('Access-Control-Allow-Credentials', true);
-	reply.header('Access-Control-Allow-Methods', 'OPTIONS');
-	reply.code(200).send();
-});
-
-fastify.post('/api/v1/create/', (request, reply) => {
+fastify.post(ROUTES.create, (request, reply) => {
 	reply.header('Access-Control-Allow-Origin', '*');
 	reply.header('Access-Control-Allow-Credentials', true);
 
@@ -95,7 +97,7 @@ fastify.post('/api/v1/create/', (request, reply) => {
 	});
 });
 
-fastify.put('/api/v1/update/:id', (request, reply) => {
+fastify.put(ROUTES.update, (request, reply) => {
 	reply.header('Access-Control-Allow-Origin', '*');
 	reply.header('Access-Control-Allow-Credentials', true);
 
@@ -106,7 +108,7 @@ fastify.put('/api/v1/update/:id', (request, reply) => {
 	});
 });
 
-fastify.get('/api/v1/retrieve/:id', async (request, reply) => {
+fastify.get(ROUTES.get, async (request, reply) => {
 	reply.header('Access-Control-Allow-Origin', 'http://localhost:8080');
 	reply.header('Access-Control-Allow-Credentials', true);
 	reply.header('Access-Control-Allow-Methods', 'GET');
