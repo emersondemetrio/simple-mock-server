@@ -1,0 +1,42 @@
+[
+	{
+		"uuid": "11a4f321-7b3a-4d52-94b9-8f8c509108ad",
+		"service_area": "Lincoln Park",
+		"allow_edits": true,
+		"grace_period": 44444444,
+		"disable_edit_current_time": 2123123123,
+		"disable_edit_trip_start": 34,
+		"late_fee_amount": 12,
+		"late_fee_hours": 120000
+	},
+	{
+		"uuid": "56447df1-adaf-4694-a378-c10757ffac9e",
+		"service_area": "Brooklyn Street",
+		"allow_edits": true,
+		"grace_period": 98989898,
+		"disable_edit_current_time": 6666,
+		"disable_edit_trip_start": 34,
+		"late_fee_amount": 14,
+		"late_fee_hours": 14
+	},
+	{
+		"uuid": "ff521a08-c7a1-4c98-9ddf-b3215f98b3dc",
+		"service_area": "Lisboa",
+		"allow_edits": true,
+		"grace_period": 8888123123,
+		"disable_edit_current_time": 55555,
+		"disable_edit_trip_start": 345345345345345360000,
+		"late_fee_amount": 24,
+		"late_fee_hours": 34
+	},
+	{
+		"uuid": "fb0d77c4-4524-4ae7-a417-229baaf7bc4c",
+		"service_area": "I am not Myself",
+		"allow_edits": true,
+		"grace_period": 666999,
+		"disable_edit_current_time": 55555,
+		"disable_edit_trip_start": 34,
+		"late_fee_amount": 24,
+		"late_fee_hours": 34
+	}
+]

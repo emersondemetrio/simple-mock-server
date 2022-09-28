@@ -1,0 +1,26 @@
+{
+	"name": "praytime-bot",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"start": "node server.js",
+		"dev": "fastify start -w -l info -P server.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@fastify/cors": "*",
+		"@fastify/static": "*",
+		"dotenv": "*",
+		"fastify": "*",
+		"fastify-static": "*"
+	},
+	"devDependencies": {
+		"tap": "^14.11.0"
+	}
+}
