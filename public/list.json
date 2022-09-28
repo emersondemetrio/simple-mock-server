@@ -1,62 +1,62 @@
 [
-    {
-        "uuid": "11a4f321-7b3a-4d52-94b9-8f8c509108ad",
-        "service_area": "Lincoln Park",
-        "allow_edits": true,
-        "grace_period": 44444444,
-        "disable_edit_current_time": 2123123123,
-        "disable_edit_trip_start": 34,
-        "late_fee_amount": 12,
-        "late_fee_hours": 120000
-    },
-    {
-        "uuid": "56447df1-adaf-4694-a378-c10757ffac9e",
-        "service_area": "Brooklyn Street",
-        "allow_edits": true,
-        "grace_period": 98989898,
-        "disable_edit_current_time": 6666,
-        "disable_edit_trip_start": 34,
-        "late_fee_amount": 14,
-        "late_fee_hours": 14
-    },
-    {
-        "uuid": "ff521a08-c7a1-4c98-9ddf-b3215f98b3dc",
-        "service_area": "Lisboa",
-        "allow_edits": true,
-        "grace_period": 8888123123,
-        "disable_edit_current_time": 55555,
-        "disable_edit_trip_start": 345345345345345360000,
-        "late_fee_amount": 24,
-        "late_fee_hours": 34
-    },
-    {
-        "uuid": "fb0d77c4-4524-4ae7-a417-229baaf7bc4c",
-        "service_area": "I am not Myself",
-        "allow_edits": true,
-        "grace_period": 666999,
-        "disable_edit_current_time": 55555,
-        "disable_edit_trip_start": 34,
-        "late_fee_amount": 24,
-        "late_fee_hours": 34
-    },
-    {
-        "service_area": "Lincoln Park kkkk",
-        "allow_edits": true,
-        "grace_period": 10123,
-        "disable_edit_current_time": 2,
-        "disable_edit_trip_start": 34123,
-        "late_fee_amount": 12,
-        "late_fee_hours": 12,
-        "uuid": "1be60d6f-ba62-4409-842f-d0c3e4e50950"
-    },
-    {
-        "service_area": "Lincoln ASASS",
-        "allow_edits": true,
-        "grace_period": 10,
-        "disable_edit_current_time": 2,
-        "disable_edit_trip_start": 34,
-        "late_fee_amount": 12,
-        "late_fee_hours": 12,
-        "uuid": "aac464de-cd38-4368-bcc4-f6cf715f8105"
-    }
+	{
+		"uuid": "11a4f321-7b3a-4d52-94b9-8f8c509108ad",
+		"service_area": "Element 1",
+		"allow_edits": false,
+		"grace_period": 1,
+		"disable_edit_current_time": 2123123123,
+		"disable_edit_trip_start": 34,
+		"late_fee_amount": 12,
+		"late_fee_hours": 120000
+	},
+	{
+		"uuid": "56447df1-adaf-4694-a378-c10757ffac9e",
+		"service_area": "Element 2",
+		"allow_edits": true,
+		"grace_period": 2,
+		"disable_edit_current_time": 6666,
+		"disable_edit_trip_start": 34,
+		"late_fee_amount": 14,
+		"late_fee_hours": 14
+	},
+	{
+		"uuid": "ff521a08-c7a1-4c98-9ddf-b3215f98b3dc",
+		"service_area": "Element 3",
+		"allow_edits": true,
+		"grace_period": 3,
+		"disable_edit_current_time": 55555,
+		"disable_edit_trip_start": 345345345345345360000,
+		"late_fee_amount": 24,
+		"late_fee_hours": 34
+	},
+	{
+		"uuid": "fb0d77c4-4524-4ae7-a417-229baaf7bc4c",
+		"service_area": "Element 4",
+		"allow_edits": true,
+		"grace_period": 4,
+		"disable_edit_current_time": 55555,
+		"disable_edit_trip_start": 34,
+		"late_fee_amount": 24,
+		"late_fee_hours": 34
+	},
+	{
+		"service_area": "Element 5",
+		"allow_edits": true,
+		"grace_period": 5,
+		"disable_edit_current_time": 2,
+		"disable_edit_trip_start": 34123,
+		"late_fee_amount": 12,
+		"late_fee_hours": 12,
+		"uuid": "1be60d6f-ba62-4409-842f-d0c3e4e50950"
+	},
+	{
+		"service_area": "Element 6",
+		"allow_edits": true,
+		"grace_period": 6,
+		"disable_edit_current_time": 2,
+		"disable_edit_trip_start": 34,
+		"late_fee_amount": 12,
+		"late_fee_hours": 12,
+		"uuid": "aac464de-cd38-4368-bcc4-f6cf715f8105"
+	}
 ]
