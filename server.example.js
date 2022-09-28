@@ -1,3 +1,5 @@
+// RENAME THIS FILE TO server.js
+
 const fastify = require('fastify')({ logger: true, exposeHeadRoutes: true });
 const path = require('path');
 const fs = require('fs');
@@ -34,8 +36,9 @@ const getSingleElementOf = (uuid) => {
 
 const addElement = (element) => {
 	const data = getAllMockData();
-	data.push(element);
 
+	data.push(element);
+	console.log(data);
 	updateAllElementsWith(data);
 
 	return getAllMockData();
@@ -57,7 +60,7 @@ const updateSingleElementWith = (newData) => {
 	return getSingleElementOf(elementId);
 };
 
-fastify.get('/api/v1/edit-trip/settings/', async (_, reply) => {
+fastify.get('/api/v1/list/', async (_, reply) => {
 	reply.header('Access-Control-Allow-Origin', 'http://localhost:8080');
 	reply.header('Access-Control-Allow-Credentials', true);
 	reply.header('Access-Control-Allow-Methods', 'GET');
@@ -69,14 +72,14 @@ fastify.get('/api/v1/edit-trip/settings/', async (_, reply) => {
 	});
 });
 
-fastify.options('/api/v1/edit-trip/settings/:id', (_, reply) => {
+fastify.options('/api/v1/create/', (_, reply) => {
 	reply.header('Access-Control-Allow-Origin', 'http://localhost:8080');
 	reply.header('Access-Control-Allow-Credentials', true);
 	reply.header('Access-Control-Allow-Methods', 'OPTIONS');
 	reply.code(200).send();
 });
 
-fastify.post('/api/v1/edit-trip/settings/', (request, reply) => {
+fastify.post('/api/v1/create/', (request, reply) => {
 	reply.header('Access-Control-Allow-Origin', '*');
 	reply.header('Access-Control-Allow-Credentials', true);
 
@@ -92,7 +95,7 @@ fastify.post('/api/v1/edit-trip/settings/', (request, reply) => {
 	});
 });
 
-fastify.put('/api/v1/edit-trip/settings/:id', (request, reply) => {
+fastify.put('/api/v1/update/:id', (request, reply) => {
 	reply.header('Access-Control-Allow-Origin', '*');
 	reply.header('Access-Control-Allow-Credentials', true);
 
@@ -103,7 +106,7 @@ fastify.put('/api/v1/edit-trip/settings/:id', (request, reply) => {
 	});
 });
 
-fastify.get('/api/v1/edit-trip/settings/:id', async (request, reply) => {
+fastify.get('/api/v1/retrieve/:id', async (request, reply) => {
 	reply.header('Access-Control-Allow-Origin', 'http://localhost:8080');
 	reply.header('Access-Control-Allow-Credentials', true);
 	reply.header('Access-Control-Allow-Methods', 'GET');
