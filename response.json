@@ -1,0 +1,88 @@
+{
+	"items": [
+		{
+			"uuid": "f2d1800f-a178-49b6-8b66-69fbc7f10c63",
+			"type": "return",
+			"address": {
+				"formatted_address": "1119 Broadway, Alameda, CA 94501",
+				"coordinates": {
+					"lat": 37.75728,
+					"lng": -122.24376
+				}
+			},
+			"scheduled_for": "2023-10-17T16:00:00.000Z",
+			"eta_in_minutes": 34,
+			"earnings": {
+				"amount": 26.02,
+				"currency": "USD",
+				"breakdown": {
+					"pay": 26.02,
+					"extra": 0
+				}
+			},
+			"vehicle_class": "AWD",
+			"service_area": {
+				"name": "SF",
+				"tz": "America/Los_Angeles"
+			},
+			"is_lot_pickup": false,
+			"customer": {
+				"uuid": "63e00dcb-b659-4cb8-89a6-3d855a78970e",
+				"first_name": "Chuck",
+				"last_name": "Pinkert"
+			},
+			"lot": {
+				"formatted_address": "833 Mission Street, San Francisco, CA 94103",
+				"coordinates": {
+					"lat": 37.7834037,
+					"lng": -122.4053326
+				}
+			}
+		},
+		{
+			"uuid": "fdea0bc2-9da1-4195-a0f1-f2c7ed64df07",
+			"type": "return",
+			"address": {
+				"formatted_address": "2395 45th Avenue, San Francisco, CA 94116",
+				"coordinates": {
+					"lat": 37.74196,
+					"lng": -122.50378
+				}
+			},
+			"scheduled_for": "2023-10-17T16:00:00.000Z",
+			"eta_in_minutes": 30,
+			"earnings": {
+				"amount": 24.29,
+				"currency": "USD",
+				"breakdown": {
+					"pay": 24.29,
+					"extra": 0
+				}
+			},
+			"vehicle_class": "Sedan",
+			"service_area": {
+				"name": "SF",
+				"tz": "America/Los_Angeles"
+			},
+			"is_lot_pickup": false,
+			"customer": {
+				"uuid": "14f73c42-fb68-47a4-b856-19aa4fe74972",
+				"first_name": "Dawn",
+				"last_name": "Stark"
+			},
+			"lot": {
+				"formatted_address": "833 Mission Street, San Francisco, CA 94103",
+				"coordinates": {
+					"lat": 37.7834037,
+					"lng": -122.4053326
+				}
+			}
+		}
+	],
+	"meta": {
+		"page": 1,
+		"limit": 50,
+		"pages_total": 1,
+		"results_total": 2
+	}
+}

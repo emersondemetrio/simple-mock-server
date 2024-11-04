@@ -8,7 +8,8 @@
 	},
 	"scripts": {
 		"start": "node server.js",
-		"dev": "fastify start -w -l info -P server.js"
+		"dev": "fastify start -w -l info -P server.js",
+		"live-location": "node ll-server.js"
 	},
 	"keywords": [],
 	"author": "",

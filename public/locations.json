@@ -1,0 +1,16 @@
+{
+  "trip_uuid": "tripUuid",
+  "payload": {
+    "lat": 48.30738943,
+    "lng": 11.56727993,
+    "speedValue": 3.071751594543457,
+    "speedUnit": "KPH",
+    "accuracy": 11,
+    "heading_angle": 129.61216735839844,
+    "gps_timestamp": 1718384879205,
+    "device_os": "Android 14",
+    "device_model": "SM-S908B",
+    "device_id": "UP1A.231005.007.S908BXXS7DXAC",
+    "battery_percentage": 1
+  }
+}
